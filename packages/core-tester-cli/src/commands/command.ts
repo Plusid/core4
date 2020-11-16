@@ -236,7 +236,7 @@ export abstract class BaseCommand extends Command {
         const waitPerBlock =
             this.constants.blocktime * Math.ceil(transactions.length / this.constants.block.maxTransactions);
 
-        await delay(waitPerBlock * 1200);
+        await delay(waitPerBlock * 600);
     }
 
     private async getNonce(passphrase: string): Promise<string> {
