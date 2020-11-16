@@ -13,13 +13,13 @@ export const defaults = {
     // Max transaction age in number of blocks produced since the transaction was created.
     // If a transaction stays that long in the pool without being included in any block,
     // then it will be removed.
-    maxTransactionAge: 2700,
+    maxTransactionAge: 8,
     dynamicFees: {
         enabled: true,
-        minFeePool: 3000,
-        minFeeBroadcast: 3000,
+        minFeePool: 1,
+        minFeeBroadcast: 1,
         addonBytes: {
-            transfer: 100,
+            transfer: 1,
             secondSignature: 250,
             delegateRegistration: 400000,
             vote: 100,
